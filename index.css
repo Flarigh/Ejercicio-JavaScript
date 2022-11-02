@@ -1,0 +1,20 @@
+#SerOrador button{
+    background-color:rgb(117,180,0);
+    color:white;
+}
+
+#Footer{
+    background-image: linear-gradient(to right, rgba(0, 96, 119, 0.5), rgba(0, 96, 119, 1));
+}
+
+#nav, #LugaryFecha{
+    background-color: rgb(50,60,65);
+}
+
+#ticket{
+    color: rgba(144, 238, 144, 0.829);
+}
+
+#Total{
+    background-color: rgb(190, 213, 243);
+}

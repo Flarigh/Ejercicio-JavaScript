@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio JavaScript</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-dark sticky-top navbar-expand-sm">
+        <div class="container-fluid mx-5">
+            <a class="navbar-brand" href="#">
+                Conf Bs As
+            </a>
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                <a class="nav-link" href="#LaConferencia">La conferencia</a>    
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#LosOradores">Los oradores</a>    
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#LugaryFecha">El lugar y la fecha</a> 
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#SerOrador">Conviértete en orador</a>
+                </li>
+                <li class="nav-item">
+                <a id="ticket" class="nav-link" href="#Ticket">Comprar tickets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container justify-content-center text-center">
+        <div class="row justify-content-center mx-md-4 px-0">
+            <div class="col-3 border border-primary pt-4 me-1">
+                <h4 class="fw-semibold">Estudiante</h4>
+                <p class="lead fw-normal">Tienen un descuento</p>
+                <p class="fw-bold">80%</p>
+                <p class="text-secondary">* presentar documentación</p>
+            </div>
+            <div class="col-3 border border-success pt-4 mx-1">
+                <h4 class="fw-semibold">Trainee</h4>
+                <p class="lead fw-normal">Tienen un descuento</p>
+                <p class="fw-bold">50%</p>
+                <p class="text-secondary">* presentar documentación</p>
+            </div>
+            <div class="col-3 border border-warning pt-4 ms-1">
+                <h4 class="fw-semibold">Junior</h4>
+                <p class="lead fw-normal">Tienen un descuento</p>
+                <p class="fw-bold">15%</p>
+                <p class="text-secondary">* presentar documentación</p>
+            </div>
+        </div>
+    </div>
+    <div id="SerOrador">
+        <h4 class="text-center mt-3 mb-0 small fs-6">VENTA</h4>
+        <h1 class="text-center fw-semibold mb-3">VALOR DEL TICKET $200</h1>
+        <form>
+            <div class="row justify-content-center mx-0 gx-2 px-0">
+                <div class="col-3">
+                    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" aria-describedby="Nombre">
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" id="Apellido" placeholder="Apellido" aria-describedby="Apellido">
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center mx-0 px-0">
+                <div class="col-6 px-1">
+                    <input type="mail" class="form-control" id="Correo" placeholder="Correo" aria-describedby="Correo">
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center mx-0 gx-2">
+                <div class="col-3">
+                    <label for="Cantidad" class="mb-2">Cantidad</label>
+                    <input type="text" class="form-control" id="Cantidad" placeholder="cantidad" aria-describedby="Cantidad">
+                </div>
+                <div class="col-3">
+                    <label for="Categoria" class="mb-2">Categoria</label>
+                    <select class="form-select" id="Categoria" aria-describedby="Categoria">
+                        <option value="Público General">Público General</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                    </select> 
+                </div>
+            </div>
+            <br><br>
+            <div class="row justify-content-center mx-0">    
+                <div class="col-6 px-1">
+                    <input type="text" class="form-control p-3" id="Total" value="Total a Pagar: $" aria-describedby="Total" readonly>
+                </div>
+            </div>
+            <br><br>
+            <div class="row justify-content-center mx-0 gx-2">
+                <div class="col-3">
+                    <button type="reset" class="btn active border-light col-12 py-4">Borrar</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn active border-light col-12 py-4" id="resumen">Resumen</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br><br><br><br>  
+    <div id="Footer" class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container-fluid mx-5 justify-content-center">
+            <ul class="navbar-nav gap-lg-5 gap-sm-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Preguntas <br> frecuentes</a>
+                </li>
+                <li class="nav-item py-2">
+                    <a class="nav-link active" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item py-2">
+                    <a class="nav-link active" href="#">Prensa</a>
+                </li>
+                <li class="nav-item py-2">
+                    <a class="nav-link active" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#">Términos y <br> condiciones</a>
+                </li>
+                <li class="nav-item py-2">
+                    <a class="nav-link active" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item py-2">
+                    <a class="nav-link active" href="#">Estudiantes</a>
+                </li>
+            </ul>
+        </div>    
+    </div>
+</div>
+
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
